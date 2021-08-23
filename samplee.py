@@ -1,0 +1,5 @@
+f= open("abc.txt","x")
+f=open("abc.txt","a")
+f.write("chetan")
+f.write("ver vermadnvs njkn")
+f.close()

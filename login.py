@@ -1,0 +1,75 @@
+from tkinter import *
+
+root =Tk()
+root.geometry("400x400")
+root.title("Student Registration") 
+root.config(bg="purple")
+
+def submit_login():
+    x=passw1.get()
+    ll1= Label(text="",font=("bold"))
+    ll1.place(x=0,y=0) 
+    ll1["text"]=x    
+
+#def login():
+    #  Login.place_forget()
+    #  SignUp.place_forget()
+user = Label(text="Username: ",font=("bold"),bg="purple")
+user.place(x=60,y=140)
+user1=Entry(width=27)
+user1.place(x=160,y=147)
+passw=Label(text="Password: ",font=("bold"),bg="purple")
+passw.place(x=60,y=190)
+passw1= Entry(width=27,show="*")
+passw1.place(x=160,y=197)
+submit = Button(text="Submit",command=submit_login,width=10)
+submit.place(x=110,y=300)
+back=Button(text="Back",width=10)
+back.place(x=200,y=300)
+
+
+root.mainloop()
+
+
+
+
+# def login():
+#  Login.place_forget()
+#  SignUp.place_forget()    
+#  user = Label(text="Username: ",font=("bold"),bg="purple")
+#  user.place(x=60,y=140)
+#  user1=Entry(width=27)
+#  user1.place(x=160,y=147)
+#  passw=Label(text="Password: ",font=("bold"),bg="purple")
+#  passw.place(x=60,y=190)
+#  passw1= Entry(width=27,show="*")
+#  passw1.place(x=160,y=197)
+#  submit = Button(text="Submit",command=submit_login,width=10)
+#  submit.place(x=160,y=300)
+
+
+# def signup():
+#      Login.place_forget()
+#      SignUp.place_forget()
+#      mail = Label(text="Email: ",font=("bold"),bg="purple")
+#      mail.place(x=60,y=80)
+#      mail1=Entry(width=27)
+#      mail1.place(x=160,y=87)
+
+#      userw=Label(text="Username:",font=("bold"),bg="purple")
+#      userw.place(x=60,y=110)
+#      userw1= Entry(width=27)
+#      userw1.place(x=160,y=117)
+     
+#      passw=Label(text="Password",font=("bold"),bg="purple")
+#      passw.place(x=60,y=140)
+#      passw1=Entry(width=27,show="*")
+#      passw1.place(x=160,y=147)
+
+#      cpassw=Label(text="Confirm: ",font=("bold"),bg="purple")
+#      cpassw.place(x=60,y=170)
+#      cpassw1=Entry(width=27,show="*")
+#      cpassw1.place(x=160,y=177)
+
+#      submit = Button(text="Submit",command=submit_signup,width=10)
+#      submit.place(x=160,y=300)
